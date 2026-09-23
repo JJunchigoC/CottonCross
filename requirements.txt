@@ -1,0 +1,8 @@
+numpy>=1.26,<3
+scipy>=1.11,<2
+opencv-python>=4.8,<6
+Pillow>=10,<13
+pypdf>=5,<7
+matplotlib>=3.8,<4
+torch>=2.5,<3
+einops>=0.7,<1

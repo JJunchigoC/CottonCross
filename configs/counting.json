@@ -1,0 +1,9 @@
+{
+  "checkpoint": "runs/main/cfxnet_s44/best.pt",
+  "staple_px": 1350.0,
+  "debris_fraction": 0.1,
+  "selected_on": "real train+val plates with a high/medium reference count",
+  "selection_mae": 0.18421052631578946,
+  "seed": 44,
+  "note": "staple_px is a camera calibration: re-select it for a different microscope or magnification (scripts/count_fibers.py on a few counted images), or pass --staple to the app."
+}

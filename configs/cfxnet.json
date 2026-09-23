@@ -1,0 +1,42 @@
+{
+  "arch": "cfxnet",
+  "base": 24,
+  "depth": 4,
+  "strip": 11,
+  "model": {
+    "oca_version": "v1"
+  },
+  "input_mode": "bgn",
+  "val_synth": null,
+  "steps": 3000,
+  "warmup": 2000,
+  "batch_size": 8,
+  "crop": 256,
+  "crop_mode": "crossing",
+  "learning_rate": 0.0012,
+  "weight_decay": 0.0001,
+  "seed": 42,
+  "amp": true,
+  "validate_every": 250,
+  "num_workers": 4,
+  "weights": {
+    "mask": 1.0,
+    "center": 1.0,
+    "joint": 1.0,
+    "topology": 0.3,
+    "orientation": 0.15,
+    "overlap": 0.3,
+    "embedding": 0.2,
+    "deep": 0.2
+  },
+  "unsupervised": {
+    "enabled": true,
+    "weight": 0.05,
+    "confidence": 0.95,
+    "ema": 0.995,
+    "context_mask": true,
+    "equivariance": 0.02,
+    "orientation": 0.05,
+    "crossing_fraction": 0.6
+  }
+}

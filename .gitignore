@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+logs/
+
+# Large generated artefacts.  They are part of the delivered project on disk, but a
+# source checkout should regenerate them with scripts/prepare_data.py and
+# scripts/run_experiments.py rather than carry them in version control.
+data/
+runs/
+results/
+FILES.sha256
+DELIVERY.json

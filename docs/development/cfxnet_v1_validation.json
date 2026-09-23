@@ -1,0 +1,60 @@
+{
+  "variant": "cfxnet-v1 (scalar prior gain, channel-mean orientation energy)",
+  "runs": {
+    "cfxnet_s42": {
+      "summary": {
+        "architecture": "cfxnet",
+        "seed": 42,
+        "steps": 3000,
+        "parameters": 8578384,
+        "best_val_score": 0.9181109345243437,
+        "elapsed_seconds": 714.3,
+        "selection": "teacher, mean of occupancy and centerline Dice on the synthetic val split",
+        "real_accuracy": null,
+        "real_accuracy_reason": "no human ground truth exists for these plates"
+      },
+      "val_crossing": {
+        "threshold": 0.7,
+        "f1": 0.8368794326241135
+      },
+      "prior_gain": -0.07464149594306946
+    },
+    "cfxnet_s43": {
+      "summary": {
+        "architecture": "cfxnet",
+        "seed": 43,
+        "steps": 3000,
+        "parameters": 8578384,
+        "best_val_score": 0.9143567447819068,
+        "elapsed_seconds": 712.6,
+        "selection": "teacher, mean of occupancy and centerline Dice on the synthetic val split",
+        "real_accuracy": null,
+        "real_accuracy_reason": "no human ground truth exists for these plates"
+      },
+      "val_crossing": {
+        "threshold": 0.7,
+        "f1": 0.826645264847512
+      },
+      "prior_gain": 0.010145867243409157
+    },
+    "cfxnet_s44": {
+      "summary": {
+        "architecture": "cfxnet",
+        "seed": 44,
+        "steps": 3000,
+        "parameters": 8578384,
+        "best_val_score": 0.9112690330733719,
+        "elapsed_seconds": 713.7,
+        "selection": "teacher, mean of occupancy and centerline Dice on the synthetic val split",
+        "real_accuracy": null,
+        "real_accuracy_reason": "no human ground truth exists for these plates"
+      },
+      "val_crossing": {
+        "threshold": 0.7,
+        "f1": 0.8003314001657
+      },
+      "prior_gain": -0.01861041970551014
+    }
+  },
+  "note": "archived before the OCA conditioning fix; comparison is on validation only"
+}

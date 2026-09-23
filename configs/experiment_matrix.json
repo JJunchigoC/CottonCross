@@ -1,0 +1,172 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "steps": 3000,
+  "warmup": 2000,
+  "batch": 8,
+  "architectures": {
+    "unet": {
+      "arch": "unet",
+      "base": 32
+    },
+    "attunet": {
+      "arch": "attunet",
+      "base": 32
+    },
+    "unetpp": {
+      "arch": "unetpp",
+      "base": 32
+    },
+    "resunet": {
+      "arch": "resunet",
+      "base": 32
+    },
+    "dscnet": {
+      "arch": "dscnet",
+      "base": 24
+    },
+    "cfxnet": {
+      "arch": "cfxnet",
+      "base": 24,
+      "model": {
+        "oca_version": "v1"
+      }
+    }
+  },
+  "ablations": {
+    "no_topology": {
+      "overrides": {
+        "weights": {
+          "topology": 0.0
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_orientation": {
+      "overrides": {
+        "weights": {
+          "orientation": 0.0
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_overlap": {
+      "overrides": {
+        "weights": {
+          "overlap": 0.0
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_embedding": {
+      "overrides": {
+        "weights": {
+          "embedding": 0.0
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "angle_joint"
+    },
+    "no_deep": {
+      "overrides": {
+        "weights": {
+          "deep": 0.0
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_oca": {
+      "overrides": {
+        "model": {
+          "use_oca": false
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_dcm": {
+      "overrides": {
+        "model": {
+          "use_dcm": false
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_adaptation": {
+      "overrides": {
+        "unsupervised": {
+          "enabled": false
+        }
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "raw_input": {
+      "overrides": {
+        "input_mode": "raw"
+      },
+      "corpus": "data/synth",
+      "linker": "cfx"
+    },
+    "no_equal_length": {
+      "overrides": {
+        "val_synth": "data/synth"
+      },
+      "corpus": "data/synth_varlen",
+      "linker": "cfx"
+    },
+    "no_complete_crossing": {
+      "overrides": {
+        "val_synth": "data/synth"
+      },
+      "corpus": "data/synth_nocomplete",
+      "linker": "cfx"
+    },
+    "no_real_background": {
+      "overrides": {
+        "val_synth": "data/synth"
+      },
+      "corpus": "data/synth_nocarrier",
+      "linker": "cfx"
+    }
+  },
+  "data_variants": {
+    "data/synth_varlen": {
+      "equal_length": false
+    },
+    "data/synth_nocomplete": {
+      "require_complete": false
+    },
+    "data/synth_nocarrier": {
+      "carrier_probability": 0.0
+    }
+  },
+  "linkers": {
+    "greedy": {
+      "method": "greedy",
+      "margin_threshold": null
+    },
+    "angle_joint": {
+      "method": "angle_joint",
+      "margin_threshold": null
+    },
+    "cfx": {
+      "method": "cfx",
+      "margin_threshold": null
+    },
+    "cfx_conservative": {
+      "method": "cfx",
+      "margin_threshold": 0.12
+    }
+  },
+  "ours": "cfxnet",
+  "note": "the resolved matrix for this invocation; each run also writes its own effective config.json"
+}

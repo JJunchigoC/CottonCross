@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "tile_size": 512,
+  "stride": 384,
+  "groups": [
+    {"id": "acq_A", "first": 1, "last": 17, "split": "train"},
+    {"id": "acq_B", "first": 18, "last": 42, "split": "train"},
+    {"id": "acq_C", "first": 43, "last": 56, "split": "val"},
+    {"id": "acq_D", "first": 57, "last": 75, "split": "test"}
+  ],
+  "roi_overrides": {},
+  "note": "Conservative contiguous acquisition blocks inferred from visual contact sheet; specimen independence is NOT established. ROI boxes use original pixels [x0,y0,x1,y1), no resampling."
+}

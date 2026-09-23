@@ -1,0 +1,410 @@
+{
+  "costs": {
+    "angle": 1.0,
+    "embedding": 0.6,
+    "intensity": 0.25,
+    "support": 0.2,
+    "overlap": 0.0,
+    "moments": 0.1
+  },
+  "margin_threshold": 0.0,
+  "angle_limit": 40.0,
+  "unmatched": 0.9,
+  "selected_on": {
+    "split": "val",
+    "images": 128,
+    "checkpoint": "C:\\Users\\jjiang38\\Desktop\\Junchi\\CottonCross\\runs\\main\\cfxnet_s42\\best.pt"
+  },
+  "criterion": "highest trajectory F1 on the validation split (rounded to three decimals), ties broken by pairing accuracy. Abstention is an operating point, not something the search optimises. The test split played no part in this choice.",
+  "validation": {
+    "embedding": 0.6,
+    "overlap": 0.0,
+    "margin_threshold": 0.0,
+    "instance_f1": 0.7708609271523179,
+    "graph_crossing_f1": 0.6765327695560254,
+    "pair_accuracy": 0.8708860759493671,
+    "committed_pairs": 395,
+    "abstention_rate": 0.0
+  },
+  "grid": {
+    "embedding": [
+      0.0,
+      0.6,
+      1.2,
+      2.0
+    ],
+    "overlap": [
+      0.0,
+      0.35,
+      0.7
+    ],
+    "margin_threshold": [
+      0.0,
+      0.06,
+      0.12
+    ]
+  },
+  "trials": [
+    {
+      "embedding": 0.0,
+      "overlap": 0.0,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7708609271523179,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8455696202531645,
+      "committed_pairs": 395,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.0,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7558441558441559,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8657894736842106,
+      "committed_pairs": 380,
+      "abstention_rate": 0.028720238095238094
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.0,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.749034749034749,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8793565683646113,
+      "committed_pairs": 373,
+      "abstention_rate": 0.04694940476190476
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.35,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7682119205298014,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.850632911392405,
+      "committed_pairs": 395,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.35,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7571801566579635,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8671875,
+      "committed_pairs": 384,
+      "abstention_rate": 0.02630208333333333
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.35,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7464607464607464,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8793565683646113,
+      "committed_pairs": 373,
+      "abstention_rate": 0.04499627976190476
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.7,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7651715039577837,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8698979591836735,
+      "committed_pairs": 392,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.7,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7571801566579635,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8776041666666666,
+      "committed_pairs": 384,
+      "abstention_rate": 0.027994791666666664
+    },
+    {
+      "embedding": 0.0,
+      "overlap": 0.7,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7503234152652005,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8779840848806366,
+      "committed_pairs": 377,
+      "abstention_rate": 0.03896949404761905
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.0,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7708609271523179,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8708860759493671,
+      "committed_pairs": 395,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.0,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.762778505897772,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8785529715762274,
+      "committed_pairs": 387,
+      "abstention_rate": 0.020442708333333334
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.0,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7558441558441559,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8868421052631579,
+      "committed_pairs": 380,
+      "abstention_rate": 0.037369791666666666
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.35,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7698412698412699,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8807106598984772,
+      "committed_pairs": 394,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.35,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7607843137254902,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8883116883116883,
+      "committed_pairs": 385,
+      "abstention_rate": 0.017485119047619048
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.35,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7529107373868047,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8938992042440318,
+      "committed_pairs": 377,
+      "abstention_rate": 0.036365327380952384
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.7,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7657894736842106,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8846153846153846,
+      "committed_pairs": 390,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.7,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.749034749034749,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8927613941018767,
+      "committed_pairs": 373,
+      "abstention_rate": 0.0390625
+    },
+    {
+      "embedding": 0.6,
+      "overlap": 0.7,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7404580152671756,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.9010989010989011,
+      "committed_pairs": 364,
+      "abstention_rate": 0.060763888888888895
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.0,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7698412698412699,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8807106598984772,
+      "committed_pairs": 394,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.0,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.762778505897772,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8888888888888888,
+      "committed_pairs": 387,
+      "abstention_rate": 0.015097966269841268
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.0,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7480719794344473,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8924731182795699,
+      "committed_pairs": 372,
+      "abstention_rate": 0.03935391865079365
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.35,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.766798418972332,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8849104859335039,
+      "committed_pairs": 391,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.35,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7597911227154047,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8958333333333334,
+      "committed_pairs": 384,
+      "abstention_rate": 0.022352430555555552
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.35,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7432950191570882,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8991825613079019,
+      "committed_pairs": 367,
+      "abstention_rate": 0.061321924603174593
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.7,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7568270481144344,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8871391076115486,
+      "committed_pairs": 381,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.7,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7414012738853503,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8931506849315068,
+      "committed_pairs": 365,
+      "abstention_rate": 0.044487847222222224
+    },
+    {
+      "embedding": 1.2,
+      "overlap": 0.7,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.73,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8942857142857142,
+      "committed_pairs": 350,
+      "abstention_rate": 0.07313368055555555
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.0,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7621550591327201,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8868894601542416,
+      "committed_pairs": 389,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.0,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7512953367875648,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8941798941798942,
+      "committed_pairs": 378,
+      "abstention_rate": 0.027901785714285712
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.0,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7416879795396419,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8994565217391305,
+      "committed_pairs": 368,
+      "abstention_rate": 0.05459449404761905
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.35,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7561929595827901,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8798955613577023,
+      "committed_pairs": 383,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.35,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7388535031847133,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8876712328767123,
+      "committed_pairs": 365,
+      "abstention_rate": 0.045045882936507936
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.35,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7277289836888331,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8980169971671388,
+      "committed_pairs": 353,
+      "abstention_rate": 0.07716393849206349
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.7,
+      "margin_threshold": 0.0,
+      "instance_f1": 0.7445997458703939,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8870523415977961,
+      "committed_pairs": 363,
+      "abstention_rate": 0.0
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.7,
+      "margin_threshold": 0.06,
+      "instance_f1": 0.7279503105590062,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.8898550724637682,
+      "committed_pairs": 345,
+      "abstention_rate": 0.05013020833333333
+    },
+    {
+      "embedding": 2.0,
+      "overlap": 0.7,
+      "margin_threshold": 0.12,
+      "instance_f1": 0.7146341463414634,
+      "graph_crossing_f1": 0.6765327695560254,
+      "pair_accuracy": 0.9,
+      "committed_pairs": 330,
+      "abstention_rate": 0.08782862103174602
+    }
+  ],
+  "seconds": 209.0
+}
